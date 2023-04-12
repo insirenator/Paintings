@@ -1,10 +1,10 @@
 import React from 'react';
+// import './style.css';
 
 const Card = (props) => {
-	const imageStyle = {backgroundImage: props.data.image};
+	const imageStyle = {backgroundImage: `url(${props.data.image})`};
 	return (
 		<div className="card">
-			{/*<img src="./images/mona_lisa.jpg" width="200px" height="400px" />*/}
 			<div className="image" style = {imageStyle}></div>
 			<div className="info">
 				<p className="name">{props.data.name}</p>
